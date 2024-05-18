@@ -66,9 +66,7 @@ nav {
   color: var(--extra-light);
   font-size: 1.5rem;
 }
-.nav__logo:hover {
-  color: var(--primary-color);
-}
+
 .nav__links a:hover {
   color: var(--primary-color);
 }
@@ -80,14 +78,16 @@ nav {
   gap: 2rem;
 }
 
-.link {
+.link,
+.nav__logo {
   color: var(--extra-light);
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.link:hover {
+.link:hover,
+.nav__logo a:hover {
   color: var(--primary-color);
 }
 
@@ -190,6 +190,9 @@ header .section__container {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.tours:hover {
+  background-color: #4198f6;
 }
 
 .banner__container .section__container {
